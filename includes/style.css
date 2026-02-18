@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+}
+
+/* ================= HEADER ================= */
+
+.main-header{
+    background:#1e2a78;
+    color:white;
+    padding:10px 6%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.header-left{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+/* LOGO SPACE */
+.college-logo{
+    width:60px;
+    height:60px;
+    background:#ffffff;
+    border-radius:8px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+}
+
+.college-logo img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+.college-info{
+    line-height:1.3;
+}
+
+.college-info h2{
+    font-size:18px;
+    font-weight:600;
+}
+
+.college-info p{
+    font-size:13px;
+    color:#cbd5ff;
+}
+
+/* NAVIGATION */
+
+.header-right a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.header-right a:hover{
+    color:#00e0ff;
+}
+
+.login-btn{
+    background:#00e0ff;
+    padding:8px 15px;
+    border-radius:6px;
+    color:black !important;
+    font-weight:600;
+}
+
+/* ================= FOOTER ================= */
+
+.main-footer{
+    background:#0f172a;
+    color:#ccc;
+    padding:40px 6%;
+}
+
+.footer-grid{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:40px;
+}
+
+.footer-box h3{
+    margin-bottom:15px;
+    color:white;
+}
+
+.footer-box p,
+.footer-box a{
+    font-size:14px;
+    color:#ccc;
+    text-decoration:none;
+    display:block;
+    margin-bottom:8px;
+}
+
+.footer-box a:hover{
+    color:#00e0ff;
+}
+
+.social-icons a{
+    margin-right:12px;
+    font-size:20px;
+    color:white;
+}
+
+.footer-bottom{
+    text-align:center;
+    margin-top:30px;
+    border-top:1px solid #333;
+    padding-top:15px;
+    font-size:13px;
+    color:#888;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+    .main-header{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+    }
+
+    .header-right{
+        margin-top:10px;
+    }
+
+    .footer-grid{
+        flex-direction:column;
+    }
+}
